@@ -20,7 +20,7 @@
         <iframe 
             width="800" 
             height="450" 
-            src="https://www.youtube.com/embed/YOUR_VIDEO_ID" 
+            src="https://youtu.be/W4kMpPnWfHM?si=mpc7RDw31sPetN2u"
             title="BrickBreakerEngine Introduction" 
             frameborder="0" 
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
@@ -61,7 +61,14 @@
 
     <section id="additional-info">
         <h2>Post Mortem</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, obcaecati sed esse blanditiis reiciendis facilis ipsum officia! Recusandae nesciunt accusamus, aut possimus aperiam natus deserunt quia dolorem itaque, cupiditate sed!</p>
+        <p>The development of this project was admittedly a bit messy - largely due to the time crunch. When it came to putting the group together, as well as meeting in order to plan the more specific aspects of the project, that was something that only came together quite close to the due date. As a result, many of the solutions were improvised quickly. 
+However, I think the project is quite functional as a Breakout/Brick Breaker clone with custom level editing and sharing. Collision could perhaps be more consistent, but I think that may be due to the fact that occasionally the ball moves quickly enough that from one frame to the next, it passes through the borders of a brick rather than intersecting them. (This is an issue that exists even in some Nintendo games on rare occasion…) This may be exacerbated when it comes to corner collisions. For the purposes of our game, it happens too frequently, and can be frustrating. I may also be misunderstanding the root cause of the bug here. 
+The game might be a bit difficult, as is my preference, but it’s easy to scale the difficulty down by reducing the initial velocity of the ball, or reducing the velocity cap, if you like. Perhaps a difficulty slider could have been added as an accessibility feature. Sound would also be nice to incorporate, but we ran into some odd issues with SDL mixer that didn’t happen during Pset 9. We weren’t able to troubleshoot these unfortunately. Perhaps we could also add a feature where high scores are tracked per brick map, rather than stored irrespective of level layout. 
+Given even one more day, a lot could probably be added to the project, but I’m still proud we were able to recreate what we did in the limited timespan. 
+The original concept for the game was a bit more ambitious, with the ball having simple gravity physics, and there being targets or enemies that fired down at the player. Rather than a mere paddle, the player would move a character who not only juggles the ball, but also avoids these obstacles. The ball could use a bmp texture that spins as it moves, and the player character could animate as they walk. It would be easy to incorporate some of the code from previous projects to create solutions for these goals, but again, we were quite rushed, and settled on just recreating Atari’s Breakout. While the final game is clearly an intentional derivative copy of Brick Breaker/Breakout/Arkanoid type games, (they are truly a dime a dozen) I initially wanted to emulate some concepts from “Highly Responsive to Prayers”, a 1997 PC-98 game which incorporates some of the aforementioned dynamic elements to the brick breaking formula, including targets with score multipliers, more complex ball physics, some flashy particle effects, and enemies that fire bullets down at a player character. These elements would probably make the level design feature even more engaging. I’ve always thought this kind of game concept was oddly underexplored. 
+The “minimum viable product” idea really is important for game development, as time passes more quickly than expected, and you always underestimate what roadblocks you may encounter with bugs. Some elements had to be recoded, including ball physics and input handling, to make them more smooth and work across different computers.  I really look forward to developing more projects in the future!
+Thanks again for playing our game, and for a great semester!
+</p>
     </section>
 
 </body>
